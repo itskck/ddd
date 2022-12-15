@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding?.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   configureInjection(Environment.prod);
   runApp(AppWidget());

@@ -455,8 +455,7 @@ abstract class NotesRecived implements NoteWatcherEvent {
   const factory NotesRecived(
       final Either<NoteFailure, KtList<Note>> failureOrNotes) = _$NotesRecived;
 
-  Either<NoteFailure, KtList<Note>> get failureOrNotes =>
-      throw _privateConstructorUsedError;
+  Either<NoteFailure, KtList<Note>> get failureOrNotes;
   @JsonKey(ignore: true)
   _$$NotesRecivedCopyWith<_$NotesRecived> get copyWith =>
       throw _privateConstructorUsedError;
@@ -906,7 +905,7 @@ class _$_LoadSuccess implements _LoadSuccess {
 abstract class _LoadSuccess implements NoteWatcherState {
   const factory _LoadSuccess(final KtList<Note> notes) = _$_LoadSuccess;
 
-  KtList<Note> get notes => throw _privateConstructorUsedError;
+  KtList<Note> get notes;
   @JsonKey(ignore: true)
   _$$_LoadSuccessCopyWith<_$_LoadSuccess> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1062,7 +1061,7 @@ class _$_LoadFailure implements _LoadFailure {
 abstract class _LoadFailure implements NoteWatcherState {
   const factory _LoadFailure(final NoteFailure noteFailure) = _$_LoadFailure;
 
-  NoteFailure get noteFailure => throw _privateConstructorUsedError;
+  NoteFailure get noteFailure;
   @JsonKey(ignore: true)
   _$$_LoadFailureCopyWith<_$_LoadFailure> get copyWith =>
       throw _privateConstructorUsedError;

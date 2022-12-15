@@ -19,38 +19,64 @@ class _$AppRouter extends RootStackRouter {
   final Map<String, PageFactory> pagesMap = {
     SignInPageRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
-          routeData: routeData, child: const SignInPage());
+        routeData: routeData,
+        child: const SignInPage(),
+      );
     },
     SplashPageRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
-          routeData: routeData, child: const SplashPage());
+        routeData: routeData,
+        child: const SplashPage(),
+      );
     },
     NotesOverviewPageRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
-          routeData: routeData, child: const NotesOverviewPage());
+        routeData: routeData,
+        child: const NotesOverviewPage(),
+      );
     },
     NoteFormPageRoute.name: (routeData) {
       final args = routeData.argsAs<NoteFormPageRouteArgs>();
       return MaterialPageX<dynamic>(
-          routeData: routeData,
-          child: NoteFormPage(key: args.key, editedNote: args.editedNote),
-          fullscreenDialog: true);
-    }
+        routeData: routeData,
+        child: NoteFormPage(
+          key: args.key,
+          editedNote: args.editedNote,
+        ),
+        fullscreenDialog: true,
+      );
+    },
   };
 
   @override
   List<RouteConfig> get routes => [
-        RouteConfig(SignInPageRoute.name, path: '/sign-in-page'),
-        RouteConfig(SplashPageRoute.name, path: '/'),
-        RouteConfig(NotesOverviewPageRoute.name, path: '/notes-overview-page'),
-        RouteConfig(NoteFormPageRoute.name, path: '/note-form-page')
+        RouteConfig(
+          SignInPageRoute.name,
+          path: '/sign-in-page',
+        ),
+        RouteConfig(
+          SplashPageRoute.name,
+          path: '/',
+        ),
+        RouteConfig(
+          NotesOverviewPageRoute.name,
+          path: '/notes-overview-page',
+        ),
+        RouteConfig(
+          NoteFormPageRoute.name,
+          path: '/note-form-page',
+        ),
       ];
 }
 
 /// generated route for
 /// [SignInPage]
 class SignInPageRoute extends PageRouteInfo<void> {
-  const SignInPageRoute() : super(SignInPageRoute.name, path: '/sign-in-page');
+  const SignInPageRoute()
+      : super(
+          SignInPageRoute.name,
+          path: '/sign-in-page',
+        );
 
   static const String name = 'SignInPageRoute';
 }
@@ -58,7 +84,11 @@ class SignInPageRoute extends PageRouteInfo<void> {
 /// generated route for
 /// [SplashPage]
 class SplashPageRoute extends PageRouteInfo<void> {
-  const SplashPageRoute() : super(SplashPageRoute.name, path: '/');
+  const SplashPageRoute()
+      : super(
+          SplashPageRoute.name,
+          path: '/',
+        );
 
   static const String name = 'SplashPageRoute';
 }
@@ -67,7 +97,10 @@ class SplashPageRoute extends PageRouteInfo<void> {
 /// [NotesOverviewPage]
 class NotesOverviewPageRoute extends PageRouteInfo<void> {
   const NotesOverviewPageRoute()
-      : super(NotesOverviewPageRoute.name, path: '/notes-overview-page');
+      : super(
+          NotesOverviewPageRoute.name,
+          path: '/notes-overview-page',
+        );
 
   static const String name = 'NotesOverviewPageRoute';
 }
@@ -75,16 +108,26 @@ class NotesOverviewPageRoute extends PageRouteInfo<void> {
 /// generated route for
 /// [NoteFormPage]
 class NoteFormPageRoute extends PageRouteInfo<NoteFormPageRouteArgs> {
-  NoteFormPageRoute({Key? key, required Option<Note> editedNote})
-      : super(NoteFormPageRoute.name,
-            path: '/note-form-page',
-            args: NoteFormPageRouteArgs(key: key, editedNote: editedNote));
+  NoteFormPageRoute({
+    Key? key,
+    required Option<Note> editedNote,
+  }) : super(
+          NoteFormPageRoute.name,
+          path: '/note-form-page',
+          args: NoteFormPageRouteArgs(
+            key: key,
+            editedNote: editedNote,
+          ),
+        );
 
   static const String name = 'NoteFormPageRoute';
 }
 
 class NoteFormPageRouteArgs {
-  const NoteFormPageRouteArgs({this.key, required this.editedNote});
+  const NoteFormPageRouteArgs({
+    this.key,
+    required this.editedNote,
+  });
 
   final Key? key;
 

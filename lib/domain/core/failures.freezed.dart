@@ -131,25 +131,15 @@ class __$$InvalidEmailCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$InvalidEmail<T>
-    with DiagnosticableTreeMixin
-    implements InvalidEmail<T> {
+class _$InvalidEmail<T> implements InvalidEmail<T> {
   const _$InvalidEmail({required this.failedValue});
 
   @override
   final T failedValue;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'ValueFailure<$T>.invalidEmail(failedValue: $failedValue)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'ValueFailure<$T>.invalidEmail'))
-      ..add(DiagnosticsProperty('failedValue', failedValue));
   }
 
   @override
@@ -261,7 +251,7 @@ abstract class InvalidEmail<T> implements ValueFailure<T> {
   const factory InvalidEmail({required final T failedValue}) =
       _$InvalidEmail<T>;
 
-  T get failedValue => throw _privateConstructorUsedError;
+  T get failedValue;
   @JsonKey(ignore: true)
   _$$InvalidEmailCopyWith<T, _$InvalidEmail<T>> get copyWith =>
       throw _privateConstructorUsedError;
@@ -301,25 +291,15 @@ class __$$ShortPasswordCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$ShortPassword<T>
-    with DiagnosticableTreeMixin
-    implements ShortPassword<T> {
+class _$ShortPassword<T> implements ShortPassword<T> {
   const _$ShortPassword({required this.failedValue});
 
   @override
   final T failedValue;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'ValueFailure<$T>.shortPassword(failedValue: $failedValue)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'ValueFailure<$T>.shortPassword'))
-      ..add(DiagnosticsProperty('failedValue', failedValue));
   }
 
   @override
@@ -431,7 +411,7 @@ abstract class ShortPassword<T> implements ValueFailure<T> {
   const factory ShortPassword({required final T failedValue}) =
       _$ShortPassword<T>;
 
-  T get failedValue => throw _privateConstructorUsedError;
+  T get failedValue;
   @JsonKey(ignore: true)
   _$$ShortPasswordCopyWith<T, _$ShortPassword<T>> get copyWith =>
       throw _privateConstructorUsedError;
@@ -476,9 +456,7 @@ class __$$ExceddingLengthCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$ExceddingLength<T>
-    with DiagnosticableTreeMixin
-    implements ExceddingLength<T> {
+class _$ExceddingLength<T> implements ExceddingLength<T> {
   const _$ExceddingLength({required this.failedValue, required this.max});
 
   @override
@@ -487,17 +465,8 @@ class _$ExceddingLength<T>
   final int max;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'ValueFailure<$T>.exceddingLength(failedValue: $failedValue, max: $max)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'ValueFailure<$T>.exceddingLength'))
-      ..add(DiagnosticsProperty('failedValue', failedValue))
-      ..add(DiagnosticsProperty('max', max));
   }
 
   @override
@@ -614,8 +583,8 @@ abstract class ExceddingLength<T> implements ValueFailure<T> {
       {required final String failedValue,
       required final int max}) = _$ExceddingLength<T>;
 
-  String get failedValue => throw _privateConstructorUsedError;
-  int get max => throw _privateConstructorUsedError;
+  String get failedValue;
+  int get max;
   @JsonKey(ignore: true)
   _$$ExceddingLengthCopyWith<T, _$ExceddingLength<T>> get copyWith =>
       throw _privateConstructorUsedError;
@@ -652,23 +621,15 @@ class __$$EmptyCopyWithImpl<T, $Res> extends _$ValueFailureCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$Empty<T> with DiagnosticableTreeMixin implements Empty<T> {
+class _$Empty<T> implements Empty<T> {
   const _$Empty({required this.failedValue});
 
   @override
   final T failedValue;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'ValueFailure<$T>.empty(failedValue: $failedValue)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'ValueFailure<$T>.empty'))
-      ..add(DiagnosticsProperty('failedValue', failedValue));
   }
 
   @override
@@ -779,7 +740,7 @@ class _$Empty<T> with DiagnosticableTreeMixin implements Empty<T> {
 abstract class Empty<T> implements ValueFailure<T> {
   const factory Empty({required final T failedValue}) = _$Empty<T>;
 
-  T get failedValue => throw _privateConstructorUsedError;
+  T get failedValue;
   @JsonKey(ignore: true)
   _$$EmptyCopyWith<T, _$Empty<T>> get copyWith =>
       throw _privateConstructorUsedError;
@@ -819,23 +780,15 @@ class __$$MultilineCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$Multiline<T> with DiagnosticableTreeMixin implements Multiline<T> {
+class _$Multiline<T> implements Multiline<T> {
   const _$Multiline({required this.failedValue});
 
   @override
   final T failedValue;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'ValueFailure<$T>.multiline(failedValue: $failedValue)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'ValueFailure<$T>.multiline'))
-      ..add(DiagnosticsProperty('failedValue', failedValue));
   }
 
   @override
@@ -946,7 +899,7 @@ class _$Multiline<T> with DiagnosticableTreeMixin implements Multiline<T> {
 abstract class Multiline<T> implements ValueFailure<T> {
   const factory Multiline({required final T failedValue}) = _$Multiline<T>;
 
-  T get failedValue => throw _privateConstructorUsedError;
+  T get failedValue;
   @JsonKey(ignore: true)
   _$$MultilineCopyWith<T, _$Multiline<T>> get copyWith =>
       throw _privateConstructorUsedError;
@@ -991,7 +944,7 @@ class __$$ListTooLongCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$ListTooLong<T> with DiagnosticableTreeMixin implements ListTooLong<T> {
+class _$ListTooLong<T> implements ListTooLong<T> {
   const _$ListTooLong({required this.failedValue, required this.max});
 
   @override
@@ -1000,17 +953,8 @@ class _$ListTooLong<T> with DiagnosticableTreeMixin implements ListTooLong<T> {
   final int max;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'ValueFailure<$T>.listTooLong(failedValue: $failedValue, max: $max)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'ValueFailure<$T>.listTooLong'))
-      ..add(DiagnosticsProperty('failedValue', failedValue))
-      ..add(DiagnosticsProperty('max', max));
   }
 
   @override
@@ -1126,8 +1070,8 @@ abstract class ListTooLong<T> implements ValueFailure<T> {
       {required final T failedValue,
       required final int max}) = _$ListTooLong<T>;
 
-  T get failedValue => throw _privateConstructorUsedError;
-  int get max => throw _privateConstructorUsedError;
+  T get failedValue;
+  int get max;
   @JsonKey(ignore: true)
   _$$ListTooLongCopyWith<T, _$ListTooLong<T>> get copyWith =>
       throw _privateConstructorUsedError;

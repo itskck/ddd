@@ -19,21 +19,22 @@ class AppWidget extends StatelessWidget {
               getIt<AuthBloc>()..add(const AuthEvent.authCheckRequested()),
         )
       ],
-      child: MaterialApp(
+      child: MaterialApp.router(
         title: 'Notes',
         theme: ThemeData.light().copyWith(
-            primaryColor: Colors.green[800],
-            colorScheme:
-                ColorScheme.fromSwatch().copyWith(secondary: Colors.blueAccent),
-            inputDecorationTheme: InputDecorationTheme(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(0)))),
-        home: MaterialApp.router(
-          routerDelegate: AutoRouterDelegate(appRouter),
-          routeInformationParser: appRouter.defaultRouteParser(),
+          primaryColor: Colors.green[800],
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: Colors.blueAccent),
+          inputDecorationTheme: InputDecorationTheme(
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(0),
+            ),
+          ),
         ),
-        // home: const SignInPage(),
+        routerDelegate: AutoRouterDelegate(appRouter),
+        routeInformationParser: appRouter.defaultRouteParser(),
       ),
+      // home: const SignInPage(),
     );
   }
 }

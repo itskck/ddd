@@ -173,13 +173,13 @@ abstract class _Note extends Note {
   const _Note._() : super._();
 
   @override
-  UniqueId get id => throw _privateConstructorUsedError;
+  UniqueId get id;
   @override
-  NoteBody get body => throw _privateConstructorUsedError;
+  NoteBody get body;
   @override
-  NoteColor get color => throw _privateConstructorUsedError;
+  NoteColor get color;
   @override
-  List3<TodoItem> get todos => throw _privateConstructorUsedError;
+  List3<TodoItem> get todos;
   @override
   @JsonKey(ignore: true)
   _$$_NoteCopyWith<_$_Note> get copyWith => throw _privateConstructorUsedError;

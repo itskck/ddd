@@ -125,23 +125,15 @@ class __$$InitializedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Initialized with DiagnosticableTreeMixin implements Initialized {
+class _$Initialized implements Initialized {
   const _$Initialized(this.initialNoteOption);
 
   @override
   final Option<Note> initialNoteOption;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'NoteFormEvent.initialized(initialNoteOption: $initialNoteOption)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'NoteFormEvent.initialized'))
-      ..add(DiagnosticsProperty('initialNoteOption', initialNoteOption));
   }
 
   @override
@@ -247,7 +239,7 @@ abstract class Initialized implements NoteFormEvent {
   const factory Initialized(final Option<Note> initialNoteOption) =
       _$Initialized;
 
-  Option<Note> get initialNoteOption => throw _privateConstructorUsedError;
+  Option<Note> get initialNoteOption;
   @JsonKey(ignore: true)
   _$$InitializedCopyWith<_$Initialized> get copyWith =>
       throw _privateConstructorUsedError;
@@ -287,23 +279,15 @@ class __$$BodyChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$BodyChanged with DiagnosticableTreeMixin implements BodyChanged {
+class _$BodyChanged implements BodyChanged {
   const _$BodyChanged(this.bodyStr);
 
   @override
   final String bodyStr;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'NoteFormEvent.bodyChanged(bodyStr: $bodyStr)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'NoteFormEvent.bodyChanged'))
-      ..add(DiagnosticsProperty('bodyStr', bodyStr));
   }
 
   @override
@@ -407,7 +391,7 @@ class _$BodyChanged with DiagnosticableTreeMixin implements BodyChanged {
 abstract class BodyChanged implements NoteFormEvent {
   const factory BodyChanged(final String bodyStr) = _$BodyChanged;
 
-  String get bodyStr => throw _privateConstructorUsedError;
+  String get bodyStr;
   @JsonKey(ignore: true)
   _$$BodyChangedCopyWith<_$BodyChanged> get copyWith =>
       throw _privateConstructorUsedError;
@@ -447,23 +431,15 @@ class __$$ColorChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ColorChanged with DiagnosticableTreeMixin implements ColorChanged {
+class _$ColorChanged implements ColorChanged {
   const _$ColorChanged(this.color);
 
   @override
   final Color color;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'NoteFormEvent.colorChanged(color: $color)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'NoteFormEvent.colorChanged'))
-      ..add(DiagnosticsProperty('color', color));
   }
 
   @override
@@ -567,7 +543,7 @@ class _$ColorChanged with DiagnosticableTreeMixin implements ColorChanged {
 abstract class ColorChanged implements NoteFormEvent {
   const factory ColorChanged(final Color color) = _$ColorChanged;
 
-  Color get color => throw _privateConstructorUsedError;
+  Color get color;
   @JsonKey(ignore: true)
   _$$ColorChangedCopyWith<_$ColorChanged> get copyWith =>
       throw _privateConstructorUsedError;
@@ -607,23 +583,15 @@ class __$$TodosChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$TodosChanged with DiagnosticableTreeMixin implements TodosChanged {
+class _$TodosChanged implements TodosChanged {
   const _$TodosChanged(this.todos);
 
   @override
   final KtList<TodoItemPrimitive> todos;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'NoteFormEvent.todosChanged(todos: $todos)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'NoteFormEvent.todosChanged'))
-      ..add(DiagnosticsProperty('todos', todos));
   }
 
   @override
@@ -728,7 +696,7 @@ abstract class TodosChanged implements NoteFormEvent {
   const factory TodosChanged(final KtList<TodoItemPrimitive> todos) =
       _$TodosChanged;
 
-  KtList<TodoItemPrimitive> get todos => throw _privateConstructorUsedError;
+  KtList<TodoItemPrimitive> get todos;
   @JsonKey(ignore: true)
   _$$TodosChangedCopyWith<_$TodosChanged> get copyWith =>
       throw _privateConstructorUsedError;
@@ -752,18 +720,12 @@ class __$$SavedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Saved with DiagnosticableTreeMixin implements Saved {
+class _$Saved implements Saved {
   const _$Saved();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'NoteFormEvent.saved()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'NoteFormEvent.saved'));
   }
 
   @override
@@ -1002,7 +964,7 @@ class __$$_NoteFormStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NoteFormState with DiagnosticableTreeMixin implements _NoteFormState {
+class _$_NoteFormState implements _NoteFormState {
   const _$_NoteFormState(
       {required this.note,
       required this.showErrorMessage,
@@ -1022,21 +984,8 @@ class _$_NoteFormState with DiagnosticableTreeMixin implements _NoteFormState {
   final Option<Either<NoteFailure, Unit>> saveFailureOrSuccessOption;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'NoteFormState(note: $note, showErrorMessage: $showErrorMessage, isEditing: $isEditing, isSaving: $isSaving, saveFailureOrSuccessOption: $saveFailureOrSuccessOption)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'NoteFormState'))
-      ..add(DiagnosticsProperty('note', note))
-      ..add(DiagnosticsProperty('showErrorMessage', showErrorMessage))
-      ..add(DiagnosticsProperty('isEditing', isEditing))
-      ..add(DiagnosticsProperty('isSaving', isSaving))
-      ..add(DiagnosticsProperty(
-          'saveFailureOrSuccessOption', saveFailureOrSuccessOption));
   }
 
   @override
@@ -1078,16 +1027,15 @@ abstract class _NoteFormState implements NoteFormState {
           saveFailureOrSuccessOption}) = _$_NoteFormState;
 
   @override
-  Note get note => throw _privateConstructorUsedError;
+  Note get note;
   @override
-  bool get showErrorMessage => throw _privateConstructorUsedError;
+  bool get showErrorMessage;
   @override
-  bool get isEditing => throw _privateConstructorUsedError;
+  bool get isEditing;
   @override
-  bool get isSaving => throw _privateConstructorUsedError;
+  bool get isSaving;
   @override
-  Option<Either<NoteFailure, Unit>> get saveFailureOrSuccessOption =>
-      throw _privateConstructorUsedError;
+  Option<Either<NoteFailure, Unit>> get saveFailureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
   _$$_NoteFormStateCopyWith<_$_NoteFormState> get copyWith =>

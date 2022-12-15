@@ -108,20 +108,12 @@ class __$$CancelledByUserCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$CancelledByUser
-    with DiagnosticableTreeMixin
-    implements CancelledByUser {
+class _$CancelledByUser implements CancelledByUser {
   const _$CancelledByUser();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthFailure.cancledByUser()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthFailure.cancledByUser'));
   }
 
   @override
@@ -235,18 +227,12 @@ class __$$ServerErrorCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ServerError with DiagnosticableTreeMixin implements ServerError {
+class _$ServerError implements ServerError {
   const _$ServerError();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthFailure.serverError()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthFailure.serverError'));
   }
 
   @override
@@ -361,21 +347,12 @@ class __$$EmailAlreadyInUseCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$EmailAlreadyInUse
-    with DiagnosticableTreeMixin
-    implements EmailAlreadyInUse {
+class _$EmailAlreadyInUse implements EmailAlreadyInUse {
   const _$EmailAlreadyInUse();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthFailure.emailAlreadyInUse()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'AuthFailure.emailAlreadyInUse'));
   }
 
   @override
@@ -494,21 +471,12 @@ class __$$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
 /// @nodoc
 
 class _$InvalidEmailAndPasswordCombination
-    with DiagnosticableTreeMixin
     implements InvalidEmailAndPasswordCombination {
   const _$InvalidEmailAndPasswordCombination();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthFailure.invalidEmailAndPasswordCombination()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty(
-          'type', 'AuthFailure.invalidEmailAndPasswordCombination'));
   }
 
   @override

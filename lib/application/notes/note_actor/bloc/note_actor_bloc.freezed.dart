@@ -219,7 +219,7 @@ abstract class Deleted implements NoteActorEvent {
   const factory Deleted(final Note note) = _$Deleted;
 
   @override
-  Note get note => throw _privateConstructorUsedError;
+  Note get note;
   @override
   @JsonKey(ignore: true)
   _$$DeletedCopyWith<_$Deleted> get copyWith =>
@@ -680,7 +680,7 @@ abstract class _DeleteFailure implements NoteActorState {
   const factory _DeleteFailure(final NoteFailure noteFailure) =
       _$_DeleteFailure;
 
-  NoteFailure get noteFailure => throw _privateConstructorUsedError;
+  NoteFailure get noteFailure;
   @JsonKey(ignore: true)
   _$$_DeleteFailureCopyWith<_$_DeleteFailure> get copyWith =>
       throw _privateConstructorUsedError;

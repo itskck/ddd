@@ -208,7 +208,9 @@ class _$_NoteDto extends _NoteDto {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NoteDtoToJson(this);
+    return _$$_NoteDtoToJson(
+      this,
+    );
   }
 }
 
@@ -225,16 +227,16 @@ abstract class _NoteDto extends NoteDto {
   factory _NoteDto.fromJson(Map<String, dynamic> json) = _$_NoteDto.fromJson;
 
   @override
-  String get id => throw _privateConstructorUsedError;
+  String get id;
   @override
-  String get body => throw _privateConstructorUsedError;
+  String get body;
   @override
-  int get color => throw _privateConstructorUsedError;
+  int get color;
   @override
-  List<TodoItemDto> get todos => throw _privateConstructorUsedError;
+  List<TodoItemDto> get todos;
   @override
   @ServerTimestampConverter()
-  FieldValue get serverTimeStamp => throw _privateConstructorUsedError;
+  FieldValue get serverTimeStamp;
   @override
   @JsonKey(ignore: true)
   _$$_NoteDtoCopyWith<_$_NoteDto> get copyWith =>
@@ -386,7 +388,9 @@ class _$_TodoItemDto extends _TodoItemDto {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TodoItemDtoToJson(this);
+    return _$$_TodoItemDtoToJson(
+      this,
+    );
   }
 }
 
@@ -401,11 +405,11 @@ abstract class _TodoItemDto extends TodoItemDto {
       _$_TodoItemDto.fromJson;
 
   @override
-  String get id => throw _privateConstructorUsedError;
+  String get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  bool get done => throw _privateConstructorUsedError;
+  bool get done;
   @override
   @JsonKey(ignore: true)
   _$$_TodoItemDtoCopyWith<_$_TodoItemDto> get copyWith =>

@@ -92,21 +92,12 @@ class __$$AuthCheckRequestedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AuthCheckRequested
-    with DiagnosticableTreeMixin
-    implements AuthCheckRequested {
+class _$AuthCheckRequested implements AuthCheckRequested {
   const _$AuthCheckRequested();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthEvent.authCheckRequested()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'AuthEvent.authCheckRequested'));
   }
 
   @override
@@ -205,18 +196,12 @@ class __$$SignedOutCopyWithImpl<$Res> extends _$AuthEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SignedOut with DiagnosticableTreeMixin implements SignedOut {
+class _$SignedOut implements SignedOut {
   const _$SignedOut();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthEvent.signedOut()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthEvent.signedOut'));
   }
 
   @override
@@ -376,18 +361,12 @@ class __$$InitialCopyWithImpl<$Res> extends _$AuthStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Initial with DiagnosticableTreeMixin implements Initial {
+class _$Initial implements Initial {
   const _$Initial();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthState.initial()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthState.initial'));
   }
 
   @override
@@ -492,18 +471,12 @@ class __$$AuthenticatedCopyWithImpl<$Res> extends _$AuthStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Authenticated with DiagnosticableTreeMixin implements Authenticated {
+class _$Authenticated implements Authenticated {
   const _$Authenticated();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthState.authenticated()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthState.authenticated'));
   }
 
   @override
@@ -609,20 +582,12 @@ class __$$UnauthenticatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Unauthenticated
-    with DiagnosticableTreeMixin
-    implements Unauthenticated {
+class _$Unauthenticated implements Unauthenticated {
   const _$Unauthenticated();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'AuthState.unauthenticated()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthState.unauthenticated'));
   }
 
   @override
